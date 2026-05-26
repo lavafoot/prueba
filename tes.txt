@@ -1,0 +1,1 @@
+DIR="nombre_de_tu_carpeta"; find "$DIR" -type f | while read -r file; do echo -e "\n=== RUTA: $file ==="; cat "$file"; done > "${DIR%/}.txt"
